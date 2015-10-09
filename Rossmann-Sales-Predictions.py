@@ -32,6 +32,9 @@ print (stddev)
 
 plt.plot(rossmann["Customers"].head(150), rossmann['Sales'].head(150), 'bs')
 plt.plot(rossmann["Customers"].head(150), m*rossmann["Customers"].head(150)+b, 'r--')
+plt.title("Rossmann Sales vs Customers")
+plt.xlabel("Customers")
+plt.ylabel("Sales")
 plt.show()
 
 sales=rossmann["Sales"].head(150)
@@ -45,19 +48,4 @@ ax.set_title('Rossmann Sales and Customers')
 ax.set_ylabel('Value')
 bp = ax.boxplot(data_to_plot)
 plt.show()
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
 
